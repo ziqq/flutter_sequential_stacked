@@ -1,0 +1,33 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run DEV web server (Debug)",
+      "cwd": "${workspaceFolder}",
+      "type": "dart",
+      "request": "launch",
+      "flutterMode": "debug",
+      "program": "lib/main.dart",
+      "args": [
+        // "--device-id=web-server",
+        // "--dart-define-from-file=config/development.json",
+        // "--dart-define-from=octopus.logs=true",
+        // "--dart-define-from=octopus.measure=false",
+      ],
+      "env": {}
+    },
+    {
+      "name": "Run DEV integration_test",
+      "type": "dart",
+      "request": "launch",
+      "program": "integration_test/app_test.dart",
+      "args": [
+        // "--dart-define-from-file=config/development.json",
+      ],
+    },
+  ],
+  "compounds": []
+}
